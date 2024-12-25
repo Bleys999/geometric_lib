@@ -40,7 +40,7 @@ jobs:
       - name: Run tests
         run: |
           cd geometric_lib
-          python -m unittest discover -s test
+          python -m unittest discover -s test -p "test_*.py" -t .
 
       - name: Lint code with flake8
         run: flake8 .
