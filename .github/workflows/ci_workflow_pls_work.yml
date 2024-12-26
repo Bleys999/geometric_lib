@@ -40,9 +40,8 @@ jobs:
           python -m pip install --upgrade pip
           pip install flake8
 
-      - name: List Files
+      - name: Run tests
         run: |
-          cd programs
           python -m unittest discover -s ./test
           
 
