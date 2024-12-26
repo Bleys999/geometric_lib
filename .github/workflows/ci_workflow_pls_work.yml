@@ -39,6 +39,7 @@ jobs:
 
       - name: Run tests
         run: |
+          cd request_handler
           python -m unittest discover -s test
 
       - name: Lint code with flake8
