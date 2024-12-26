@@ -39,7 +39,7 @@ jobs:
 
       - name: List Files
         run: |
-          list
+          ls
 
       - name: Lint code with flake8
         run: flake8 .
