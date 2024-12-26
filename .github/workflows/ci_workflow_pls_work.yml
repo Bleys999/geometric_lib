@@ -38,8 +38,8 @@ jobs:
           pip install flake8
 
       - name: List Files
-        run: |
-          ls
+        run: python -m unittest discover -s test
+          
 
       - name: Lint code with flake8
         run: flake8 .
