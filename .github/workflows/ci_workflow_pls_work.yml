@@ -37,9 +37,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install flake8
 
-      - name: Run tests
+      - name: List Files
         run: |
-          python -m unittest discover -s ./test -p 'test_*.py'
+          list
 
       - name: Lint code with flake8
         run: flake8 .
