@@ -21,6 +21,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+          
       - name: Print user information
         run: |
           echo "Full Name: ${{ env.FULL_NAME }}"
@@ -40,6 +43,7 @@ jobs:
       - name: Run tests
         run: |
           python -m unittest discover -s ./test
+          
 
       - name: Lint code with flake8
         run: flake8 .
