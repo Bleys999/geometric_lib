@@ -1,6 +1,7 @@
 import unittest
 from programs.calculate import calc
 
+
 class TestCalcFunction(unittest.TestCase):
     def test_circle_perimeter(self):
         '''Проверка функции calc для периметра круга.'''
@@ -48,9 +49,9 @@ class TestCalcFunction(unittest.TestCase):
             calc('pentagon', 'perimeter', [5])
 
     def test_invalid_function(self):
-         with self.assertRaises(ValueError):
-            calc('circle', 'volume', [5]) # Операция "volume" не поддерживается
-
+        with self.assertRaises(ValueError):
+            calc('circle', 'volume', [5])
+            # Операция "volume" не поддерживается
 
     def test_invalid_arguments_count(self):
         '''Проверка на некорректное количество аргументов.'''
@@ -61,7 +62,9 @@ class TestCalcFunction(unittest.TestCase):
         with self.assertRaises(ValueError):
             calc('triangle', 'area', [3, 4])
         with self.assertRaises(ValueError):
-            calc('circle', 'area', [])  # Передан пустой список аргументов
+            calc('circle', 'area', [])
+            # Передан пустой список аргументов
+
 
 if __name__ == '__main__':
     unittest.main()

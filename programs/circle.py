@@ -1,6 +1,7 @@
 import math
 ''' Импорт библиотеки math для числа пи '''
 
+
 def area(r):
     if r < 0:
         raise ValueError("Радиус не может быть отрицательным")

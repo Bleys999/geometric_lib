@@ -6,6 +6,7 @@ def area(a, b):
     Пример: area(2, 3) = 6 '''
     return a * b
 
+
 def perimeter(a, b):
     if a < 0 or b < 0:
         raise ValueError("Длина и ширина не могут быть отрицательными")
